@@ -559,7 +559,7 @@ canvas.wrapperEl.addEventListener('drop', function(e) {
         .then(res => res.json())
         .then(data => {
             if (data.success) {
-                const msg = `🛍 طلب تصميم تيشرت جديد\n\n📋 رقم الطلب: ${data.order_number}\n📏 المقاس: ${currentSize}\n🎨 اللون: ${data.color_name || ''}\n🖼 ${currentDesignId ? 'تصميم جاهز' : 'صورة مرفوعة'}\n\n📸 يرجى إرسال صورة تأكيدية.`;
+                const msg = `🛍 طلب تصميم  جديد\n\n📋 رقم الطلب: ${data.order_number}\n📏 المقاس: ${currentSize}\n🎨 اللون: ${data.color_name || ''}\n🖼 ${currentDesignId ? 'تصميم جاهز' : 'صورة مرفوعة'}\n\n📸 يرجى إرسال صورة تأكيدية.`;
                 window.open(`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(msg)}`, '_blank');
             } else {
                 alert('❌ ' + data.message);
@@ -590,7 +590,7 @@ document.getElementById('removeBgBtn').addEventListener('click', function() {
         console.warn('⚠️ لا يوجد منتجات لعرضها');
     }
 
-    console.log('✅ تيشرت ستور جاهز للعمل!');
+    console.log('✅ صمم منتجك  ستور جاهز للعمل!');
 });
 
 
