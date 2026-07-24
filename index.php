@@ -151,8 +151,9 @@ foreach ($products as $prod) {
         <!-- أزرار الإجراءات (لم نغير أي شيء) -->
         <div class="actions">
             <button id="orderBtn" class="btn-order">📲 طلب عبر واتساب</button>
-            <button id="exportBtn" class="btn-export">📥 تصدير PNG</button>
-            <a href="https://www.remove.bg/upload" target="_blank" class="btn-remove-bg">🖼️ إزالة الخلفية</a>
+<button id="exportBtn" class="btn-export">📥 تصدير PNG</button>
+<!-- 👇 أضف هذا السطر -->
+<p class="hint-export">📥 ستُحمل الصورة النهائية بصيغة PNG، أرسلها عبر واتساب مع طلبك</p>            <a href="https://www.remove.bg/upload" target="_blank" class="btn-remove-bg">🖼️ إزالة الخلفية</a>
         </div>
 
     </div>
