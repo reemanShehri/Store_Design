@@ -572,14 +572,12 @@ canvas.wrapperEl.addEventListener('drop', function(e) {
     // =============================================
     // 16. زر إزالة الخلفية
     // =============================================
-    document.getElementById('removeBgBtn').addEventListener('click', function() {
-        if (userImageFile) {
-            window.open('https://www.remove.bg/upload', '_blank');
-            alert('📸 تم فتح remove.bg. قم برفع الصورة التي أضفتها يدوياً لإزالة الخلفية.');
-        } else {
-            alert('⚠️ يرجى رفع صورة أولاً باستخدام زر "رفع صورة" أو سحبها.');
-        }
-    });
+   // =============================================
+// زر إزالة الخلفية – يفتح الموقع مباشرة
+// =============================================
+document.getElementById('removeBgBtn').addEventListener('click', function() {
+    window.open('https://www.remove.bg/upload', '_blank');
+});
 
     // =============================================
     // 17. تحميل أول منتج عند بدء التشغيل
